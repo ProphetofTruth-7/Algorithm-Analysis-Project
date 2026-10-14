@@ -30,3 +30,13 @@ def sequential_search(array, target):
         if value == target:
             return index
     return -1
+
+def test_search_functions(target, array):
+    index_RBS = recursive_binary_search(array, target, 0, len(array)-1)
+    index_IBS = iterative_binary_search(array, target)
+    index_SS = sequential_search(array, target)
+
+    print (f"Recursive Binary Search: Target {target} found at index {index_RBS}")
+    print (f"Iterative Binary Search: Target {target} found at index {index_IBS}")
+    print (f"Sequential Search: Target {target} found at index {index_SS}") 
+    print()
