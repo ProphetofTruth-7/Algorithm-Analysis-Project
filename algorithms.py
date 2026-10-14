@@ -40,3 +40,5 @@ def test_search_functions(target, array):
     print (f"Iterative Binary Search: Target {target} found at index {index_IBS}")
     print (f"Sequential Search: Target {target} found at index {index_SS}") 
     print()
+    print(f"The Sorted List: {array}")
+    print()

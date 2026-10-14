@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>506cc972-c0ca-43c3-83bc-2691252ecc81</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>phase_1_basic_testing.py</StartupFile>
+    <StartupFile>phase_2_basic_testing.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,7 @@
     <Compile Include="algorithms.py" />
     <Compile Include="main.py" />
     <Compile Include="phase_1_basic_testing.py" />
+    <Compile Include="phase_2_basic_testing.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
