@@ -1,4 +1,4 @@
-from algorithms import (iterative_binary_search, recursive_binary_search, sequential_search, test_search_functions)
+from algorithms import (iterative_binary_search, recursive_binary_search, sequential_search, test_search_functions_printer)
 import random
 
 
@@ -12,7 +12,7 @@ else:
     target = 101
     expected = False
         
-test_search_functions(target, random_values)
+test_search_functions_printer(target, random_values)
 if expected:
     print(f"Target was present in the list, as expected")
     print()

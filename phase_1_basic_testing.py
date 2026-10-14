@@ -1,4 +1,4 @@
-from algorithms import (iterative_binary_search, recursive_binary_search, sequential_search, test_search_functions)
+from algorithms import (iterative_binary_search, recursive_binary_search, sequential_search, test_search_functions_printer)
 import unittest
 
 class testPhase1(unittest.TestCase):
@@ -47,7 +47,7 @@ class testPhase1(unittest.TestCase):
         self.assertEqual(4, sequential_search(self.duplicate_list, 7))
 
     def test_print(self):
-        test_search_functions(8, self.full_list)
+        test_search_functions_printer(8, self.full_list)
 
 if __name__ == "__main__":
     unittest.main()

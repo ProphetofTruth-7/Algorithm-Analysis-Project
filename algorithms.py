@@ -31,7 +31,7 @@ def sequential_search(array, target):
             return index
     return -1
 
-def test_search_functions(target, array):
+def test_search_functions_printer(target, array):
     index_RBS = recursive_binary_search(array, target, 0, len(array)-1)
     index_IBS = iterative_binary_search(array, target)
     index_SS = sequential_search(array, target)
