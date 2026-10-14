@@ -1,11 +1,15 @@
 from algorithms import (iterative_binary_search, recursive_binary_search, sequential_search)
 
-
-
-
-#recursive_binary_search(list, target, low index, len()-1)
-#iterative_binary_search(list, target)
-#sequential_search(list, target)
-
-values = [1, 3, 4, 7, 8, 10, 13, 15, 16]
+values = [2, 3, 18, 7, 8, 16, 5, 13, 15]
 values.sort()
+
+target = 8
+missing_target = 10
+
+index_RBS = recursive_binary_search(values, target, 0, len(values)-1)
+index_IBS = iterative_binary_search(values, target)
+index_SS = sequential_search(values, target)
+
+print (f"Recursive Binary Search: Target {target} found at index {index_RBS}")
+print (f"Iterative Binary Search: Target {target} found at index {index_IBS}")
+print (f"Sequential Search: Target {target} found at index {index_SS}")
