@@ -40,5 +40,9 @@ def test_search_functions(target, array):
     print (f"Iterative Binary Search: Target {target} found at index {index_IBS}")
     print (f"Sequential Search: Target {target} found at index {index_SS}") 
     print()
+    if target == 101:
+        print(f"The Target is not present in the list.")
+    else:
+        print(f"The Target: {target}")
     print(f"The Sorted List: {array}")
     print()
