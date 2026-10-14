@@ -7,14 +7,14 @@ random_values.sort()
 
 if random.random() < 0.5:
     target = random.choice(random_values)
-    expected_to_be_present = True
+    expected = True
 else:
     target = 101
-    expected_to_be_present = False
+    expected = False
         
 test_search_functions(target, random_values)
-if expected_to_be_present:
-    print(f"Target was properly inserted and found in the list")
+if expected:
+    print(f"Target was present in the list, as expected")
     print()
 else:
     print(f"Target was not present in the list, as expected")
