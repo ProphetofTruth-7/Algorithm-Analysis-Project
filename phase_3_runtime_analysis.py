@@ -2,12 +2,14 @@ from algorithms import (iterative_binary_search, recursive_binary_search, sequen
 import random, time
 
 data_sizes = [5000, 50000, 100000, 150000, 1000000]
-results_iterative_binary_search = []
-results_recursive_binary_search = []
-results_sequential_search = []
 
 for size in data_sizes:
     print()
+
+    results_iterative_binary_search = []
+    results_recursive_binary_search = []
+    results_sequential_search = []
+
     number_of_trials = 10
     tracker = 1
     random_values = sorted(random.randint(1, 10) for _ in range(size))
@@ -33,8 +35,7 @@ for size in data_sizes:
         S_elapsed_microseconds = (time.perf_counter() - start) * 1000000
         results_sequential_search.append(S_elapsed_microseconds)
 
-
-        print(f"The target({target}) was found at index {IB_index} in {IB_elapsed_microseconds:.2f} microseconds for Iterative Binary Search with list size {size}. Trial {tracker}")
+        #print(f"The target({target}) was found at index {IB_index} in {IB_elapsed_microseconds:.2f} microseconds for Iterative Binary Search with list size {size}. Trial {tracker}")
 
         if IB_index != -1:
             assert random_values[IB_index] == target
@@ -51,9 +52,13 @@ for size in data_sizes:
 
         number_of_trials -= 1
         tracker += 1
-    
+    IB_average = sum(results_iterative_binary_search) / len(results_iterative_binary_search)
+    RB_average = sum(results_recursive_binary_search) / len(results_recursive_binary_search)
+    S_average = sum(results_sequential_search) / len(results_sequential_search)
+    print (f"Average IB({size}): {IB_average:.2f} microseconds")
+    print (f"Average RB({size}): {RB_average:.2f} microseconds")
+    print (f"Average S({size}): {S_average:.2f} microseconds")
 
 print()
 print()
 print()
-print(f"Results for Iterative Binary Search: {results_iterative_binary_search[10]}")

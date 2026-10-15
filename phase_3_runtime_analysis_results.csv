@@ -1,6 +1,24 @@
-Array Size	Recursive Binary	Iterative Binary	Sequential
-5000		0.00				0.00				0.00
-50000		0.00				0.00				0.00
-100000		0.00				0.00				0.00
-150000		0.00				0.00				0.00
-1000000		0.00				0.00				0.00
+Array Size	Recursive Binary				Iterative Binary				Sequential
+5000	4.96							4.62							343.06
+50000		5.20							3.96							2818.95
+100000		8.80							6.67							6794.02
+150000		10.01							7.39							10300.31
+1000000		14.24							8.47							70245.43
+
+
+Average IB(50000): 5.20 microseconds
+Average RB(50000): 3.96 microseconds
+Average S(50000): 2818.95 microseconds
+
+Average IB(100000): 8.80 microseconds
+Average RB(100000): 6.67 microseconds
+Average S(100000): 6794.02 microseconds
+
+Average IB(150000): 10.01 microseconds
+Average RB(150000): 7.39 microseconds
+Average S(150000): 10300.31 microseconds
+
+Average IB(1000000): 14.24 microseconds
+Average RB(1000000): 8.47 microseconds
+Average S(1000000): 70245.43 microseconds
+data_size,recursive_binary_us,iterative_binary_us,sequential_us
