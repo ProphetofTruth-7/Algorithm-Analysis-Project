@@ -17,7 +17,7 @@ for size in data_sizes:
     if random.random() < 0.5:
         target = random.choice(random_values)
     else:
-        target = 1000001
+        target = 100
 
     while number_of_trials > 0:
         start = time.perf_counter() #Iterative Binary
