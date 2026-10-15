@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>506cc972-c0ca-43c3-83bc-2691252ecc81</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>phase_2_basic_testing.py</StartupFile>
+    <StartupFile>phase_3_runtime_analysis.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
