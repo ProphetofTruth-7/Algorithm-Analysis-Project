@@ -35,7 +35,6 @@ for size in data_sizes:
         S_elapsed_microseconds = (time.perf_counter() - start) * 1000000
         results_sequential_search.append(S_elapsed_microseconds)
 
-        #print(f"The target({target}) was found at index {IB_index} in {IB_elapsed_microseconds:.2f} microseconds for Iterative Binary Search with list size {size}. Trial {tracker}")
 
         if IB_index != -1:
             assert random_values[IB_index] == target
